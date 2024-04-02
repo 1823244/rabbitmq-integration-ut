@@ -6,13 +6,13 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>f0d9b770-55bc-4c3a-af01-bb039dbcb6f9</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.ИмпортУТ_Из_ЕРП" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.ИмпортУТ_из_ЕРП" category="Object">
 				<xr:TypeId>f133d5cc-ba39-4636-bcbe-e382b69e54c5</xr:TypeId>
 				<xr:ValueId>ccedd34d-3df8-46c4-8272-2e7907fa42a7</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ИмпортУТ_Из_ЕРП</Name>
+			<Name>ИмпортУТ_из_ЕРП</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.ИмпортУТ_Из_ЕРП.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.ИмпортУТ_из_ЕРП.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
