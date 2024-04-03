@@ -6,21 +6,21 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>e086c2df-a82d-4e5f-8909-4926bdd3e6af</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.Выгрузка_из_ЕРП" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.Выгрузка_из_УТ" category="Object">
 				<xr:TypeId>b137f5ad-09d4-4831-b6e6-b64e85291413</xr:TypeId>
 				<xr:ValueId>bf1d1618-d812-4db8-9fab-6f5dda98757a</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Выгрузка_из_ЕРП</Name>
+			<Name>Выгрузка_из_УТ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузка из ЕРП</v8:content>
+					<v8:content>Выгрузка из УТ</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.Выгрузка_из_ЕРП.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.Выгрузка_из_УТ.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
