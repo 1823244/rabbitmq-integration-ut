@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.16">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаВыполнитьОтложенноеПроведение" id="1">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.ВыполнитьОтложенноеПроведение</CommandName>
+				<ExtendedTooltip name="ФормаВыполнитьОтложенноеПроведениеРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="ДокументСсылка" id="3">
+			<DataPath>ДокументСсылка</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДокументСсылкаКонтекстноеМеню" id="4"/>
+			<ExtendedTooltip name="ДокументСсылкаРасширеннаяПодсказка" id="5"/>
+		</InputField>
+		<Button name="ПровестиОдинДокумент" id="6">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПровестиОдинДокумент</CommandName>
+			<ExtendedTooltip name="ПровестиОдинДокументРасширеннаяПодсказка" id="7"/>
+		</Button>
+		<InputField name="ПериодПроведения" id="8">
+			<DataPath>ПериодПроведения</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПериодПроведенияКонтекстноеМеню" id="9"/>
+			<ExtendedTooltip name="ПериодПроведенияРасширеннаяПодсказка" id="10"/>
+		</InputField>
+		<InputField name="ВидДокументов" id="11">
+			<DataPath>ВидДокументов</DataPath>
+			<ClearButton>true</ClearButton>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВидДокументовКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ВидДокументовРасширеннаяПодсказка" id="13"/>
+		</InputField>
+		<LabelDecoration name="Декорация1" id="16">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проведенные не перепроводятся!</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="18"/>
+		</LabelDecoration>
+		<Button name="ПровестиЗаПериодВидДокументов" id="14">
+			<Type>UsualButton</Type>
+			<CommandName>Form.Command.ПровестиЗаПериодВидДокументов</CommandName>
+			<ExtendedTooltip name="ПровестиЗаПериодВидДокументовРасширеннаяПодсказка" id="15"/>
+		</Button>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ОтложенноеПроведение</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="JsonText" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Json text</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>JsonText</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ДокументСсылка" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ссылка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:DocumentRef</v8:TypeSet>
+			</Type>
+			<Save>
+				<Field>ДокументСсылка</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПериодПроведения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период проведения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:StandardPeriod</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПериодПроведения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ВидДокументов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ВыполнитьОтложенноеПроведение" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить отложенное проведение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнить отложенное проведение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыполнитьОтложенноеПроведение</Action>
+		</Command>
+		<Command name="ПровестиОдинДокумент" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести один документ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести один документ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПровестиОдинДокумент</Action>
+		</Command>
+		<Command name="ПровестиЗаПериодВидДокументов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести за период вид документов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Провести за период вид документов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПровестиЗаПериодВидДокументов</Action>
+		</Command>
+	</Commands>
+</Form>
